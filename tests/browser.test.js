@@ -32,7 +32,7 @@ test('should push elements onto the stack', async function () {
   await alert.accept();
 
   // Check that the element was added to the stack
-  const topElement = await driver.findElement(By.id('top-element')).getText();
+  const topElement = await driver.findElement(By.id('top_of_stack')).getText();
 	expect(topElement).toEqual("hello");
 
 });
