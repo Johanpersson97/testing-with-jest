@@ -1,0 +1,27 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "A jest and NPM lab session",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johanpersson97/testing-with-jest.git"
+  },
+  "keywords": [
+    "lab",
+    "npm",
+    "testing"
+  ],
+  "author": "Johan Persson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Johanpersson97/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/Johanpersson97/testing-with-jest#readme"
+}
