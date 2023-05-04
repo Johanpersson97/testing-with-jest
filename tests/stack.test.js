@@ -21,5 +21,5 @@ test('peek on stack with two or more elements returns the top element', () => {
 test('peek on stack with 5 elements', () => {
   stack.push(5);
   expect(stack.peek()).toBeDefined();
-  expect(stack.peek()).toBe(4);
+  expect(stack.peek()).toBe(5);
 });
