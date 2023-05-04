@@ -23,6 +23,20 @@ test('The stack should be empty in the beginning', async () => {
 	expect(stack).toEqual("n/a");
 });
 
+test('should push elements onto the stack', async function () {
+  // Push an element onto the stack
+  let push = await driver.findElement(By.id('push'));
+  await push.click();
+  let alert = await driver.switchTo().alert();
+  await alert.sendKeys("hello");
+  await alert.accept();
+
+  // Check that the element was added to the stack
+  const topElement = await driver.findElement(By.id('top-element')).getText();
+	expect(topElement).toEqual("hello");
+
+});
+
 describe('Clicking "Pusha till stacken"', () => {
 	it('should open a prompt box', async () => {
 		let push = await driver.findElement(By.id('push'));
